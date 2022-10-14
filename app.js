@@ -41,6 +41,7 @@ const morseCode = {
   8: "---..",
   9: "----.",
   " ": "/",
+  "\n": "/",
 };
 
 let morseCodeAnsArray = [];

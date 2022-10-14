@@ -13,8 +13,12 @@ body .body__header {
 body main {
   border: 2px solid red;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   height: 50vh;
+}
+body main .flexbox-container__input-text {
+  border: 2px solid blue;
+  padding: 20px;
 }/*# sourceMappingURL=main.css.map */

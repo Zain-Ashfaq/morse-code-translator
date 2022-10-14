@@ -11,11 +11,19 @@
     <h1 class="body__header">Morse Code Translator</h1>
     <main class="flexbox-container">
       <form>
-        <input
+        <!-- <input
+          class="flexbox-container__input-text"
           type="text"
           placeholder="Type something..."
           id="Enter_sentence"
-        />
+        /> -->
+        <textarea
+          class="flexbox-container__input-text"
+          id="Enter_sentence"
+          rows="2"
+          cols="25"
+          placeholder="This is the default text"
+        ></textarea>
       </form>
       <p class="insertTranslation">Translation will appear here</p>
       <button id="englishToMorse">Translate from english to morse code</button>
