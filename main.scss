@@ -1,3 +1,6 @@
+$font-name: "PT Sans", sans-serif;
+$font-size: 30px;
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +11,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    font-family: $font-name;
 
     border: 2px solid blue;
   }
@@ -19,9 +23,22 @@ body {
     align-items: center;
     flex-direction: column;
     height: 50vh;
+
     .flexbox-container__input-text {
       border: 2px solid blue;
       padding: 20px;
+      font-size: 20px;
+      font-family: $font-name;
+    }
+    .flexbox-container__insertTranslation {
+      font-family: $font-name;
+      font-size: $font-size;
+    }
+    #flexbox-container__englishToMorse {
+      font-family: $font-name;
+      font-size: $font-size;
+      border-radius: 100px;
+      padding: 10px, 0px;
     }
   }
 }

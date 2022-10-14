@@ -8,6 +8,7 @@ body .body__header {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  font-family: "PT Sans", sans-serif;
   border: 2px solid blue;
 }
 body main {
@@ -21,4 +22,16 @@ body main {
 body main .flexbox-container__input-text {
   border: 2px solid blue;
   padding: 20px;
+  font-size: 20px;
+  font-family: "PT Sans", sans-serif;
+}
+body main .flexbox-container__insertTranslation {
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+}
+body main #flexbox-container__englishToMorse {
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  border-radius: 100px;
+  padding: 10px, 0px;
 }/*# sourceMappingURL=main.css.map */

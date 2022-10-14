@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Morse Code Translater</title>
     <link rel="stylesheet" href="main.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+    </style>
   </head>
   <body>
     <h1 class="body__header">Morse Code Translator</h1>
@@ -22,11 +25,15 @@
           id="Enter_sentence"
           rows="2"
           cols="25"
-          placeholder="This is the default text"
+          placeholder="Insert english words here"
         ></textarea>
       </form>
-      <p class="insertTranslation">Translation will appear here</p>
-      <button id="englishToMorse">Translate from english to morse code</button>
+      <p class="flexbox-container__insertTranslation">
+        Translation will appear here
+      </p>
+      <button id="flexbox-container__englishToMorse">
+        Translate from english to morse code
+      </button>
     </main>
     <script src="app.js"></script>
   </body>

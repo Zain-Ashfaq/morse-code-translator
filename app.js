@@ -1,7 +1,11 @@
 // import { morseCodeData } from "./morse_code_info.js";
 
-const englishToMorseBtn = document.querySelector("#englishToMorse");
-const translationShow = document.querySelector(".insertTranslation");
+const englishToMorseBtn = document.querySelector(
+  "#flexbox-container__englishToMorse"
+);
+const translationShow = document.querySelector(
+  ".flexbox-container__insertTranslation"
+);
 
 const morseCode = {
   a: ".-",
