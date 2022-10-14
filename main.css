@@ -33,5 +33,11 @@ body main #flexbox-container__englishToMorse {
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
   border-radius: 100px;
-  padding: 10px, 0px;
+  padding: 30px 20px;
+  border: 2px solid #4caf50;
+  transition-duration: 0.4s;
+}
+body main #flexbox-container__englishToMorse:hover {
+  background-color: cyan;
+  border: 2px solid cyan;
 }/*# sourceMappingURL=main.css.map */

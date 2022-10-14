@@ -64,6 +64,13 @@ const getValue = () => {
   translate(inputTextValueChars, morseCode);
 };
 const translate = (sentence, morseCodeObj) => {
+  // BUG: need to fix error handling
+
+  // if (sentence.contains(/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*/) === true) {
+  //   console.log("yes");
+  //   return `${(translationShow.innerText =
+  //     "Error, entered inavlid characters")}`;
+  // }
   morseCodeAnsArray = [];
   console.log("this is sentence param", sentence);
   for (let i = 0; i < sentence.length; i++) {
