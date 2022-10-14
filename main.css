@@ -37,4 +37,10 @@ body main #flexbox-container__englishToMorse {
 body main #flexbox-container__englishToMorse:hover {
   background-color: cyan;
   border: 2px solid cyan;
+}
+
+@media only screen and (min-width: 800px) {
+  main .flexbox-container__insertTranslation {
+    padding: 50px;
+  }
 }/*# sourceMappingURL=main.css.map */
