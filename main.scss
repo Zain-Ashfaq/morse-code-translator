@@ -1,4 +1,23 @@
 * {
   margin: 0;
   padding: 0;
+  background-color: #e7edf0;
+}
+body {
+  .body__header {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    border: 2px solid blue;
+  }
+
+  main {
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+  }
 }

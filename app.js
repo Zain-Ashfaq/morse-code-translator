@@ -1,6 +1,7 @@
 // import { morseCodeData } from "./morse_code_info.js";
 
 const englishToMorseBtn = document.querySelector("#englishToMorse");
+const translationShow = document.querySelector(".insertTranslation");
 
 const morseCode = {
   a: ".-",
@@ -58,6 +59,7 @@ const getValue = () => {
   translate(inputTextValueChars, morseCode);
 };
 const translate = (sentence, morseCodeObj) => {
+  morseCodeAnsArray = [];
   console.log("this is sentence param", sentence);
   for (let i = 0; i < sentence.length; i++) {
     for (arr in Object.keys(morseCodeObj)) {
@@ -67,12 +69,13 @@ const translate = (sentence, morseCodeObj) => {
       }
     }
   }
-  let zain = morseCodeAnsArray;
 
   console.log(
     "this is morse code answer array",
-    zain.join().replaceAll(",", " ")
+    morseCodeAnsArray.join().replaceAll(",", " ")
   );
+  const translatedMorseText = morseCodeAnsArray.join().replaceAll(",", " ");
+  translationShow.innerText = translatedMorseText;
 };
 // console.log(morseCode.a);
 // console.log(Object.keys(morseCode));
@@ -80,4 +83,4 @@ const translate = (sentence, morseCodeObj) => {
 
 englishToMorseBtn.addEventListener("click", getValue);
 
-//module.exports = { multiply };
+module.exports = { multiply, getValue, translate, morseCode };

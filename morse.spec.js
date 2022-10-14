@@ -1,4 +1,4 @@
-const { multiply } = require("./app.js");
+const { multiply, translate, morseCode } = require("./app.js");
 
 it("multiplication 5 and 2 is equal to 10", () => {
   const result = multiply(5, 2);
@@ -6,7 +6,7 @@ it("multiplication 5 and 2 is equal to 10", () => {
 });
 
 it("should translate a = *-", () => {
-  const result = translate("a");
+  const result = translate("a", morseCode);
   expect(result).toBe("*-");
 });
 

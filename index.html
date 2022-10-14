@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Morse Code Translater</title>
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <main>
-      <h1>Morse Code Translater</h1>
+    <h1 class="body__header">Morse Code Translator</h1>
+    <main class="flexbox-container">
       <form>
         <input
           type="text"
@@ -16,7 +17,7 @@
           id="Enter_sentence"
         />
       </form>
-      <p id="demo"></p>
+      <p class="insertTranslation">Translation will appear here</p>
       <button id="englishToMorse">Translate from english to morse code</button>
     </main>
     <script src="app.js"></script>
