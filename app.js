@@ -1,4 +1,7 @@
 // import { morseCodeData } from "./morse_code_info.js";
+
+const englishToMorseBtn = document.querySelector("#englishToMorse");
+
 const morseCode = {
   a: ".-",
   b: "-...",
@@ -37,13 +40,21 @@ const morseCode = {
   8: "---..",
   9: "----.",
 };
-
+let inputTextValue;
 const multiply = (numberOne, numberTwo) => {
   return numberOne * numberTwo;
+};
+
+const printValue = () => {
+  const tempVal = document.getElementById("Enter_sentence").value;
+  inputTextValue = tempVal;
+  console.log(inputTextValue);
 };
 
 console.log(morseCode.a);
 console.log(Object.keys(morseCode));
 console.log(Object.values(morseCode));
 
-module.exports = { multiply };
+englishToMorseBtn.addEventListener("click", printValue);
+
+//module.exports = { multiply };
