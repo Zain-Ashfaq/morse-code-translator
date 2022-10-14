@@ -1,0 +1,26 @@
+{
+  "name": "morse-code-translator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zain-Ashfaq/morse-code-translator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zain-Ashfaq/morse-code-translator/issues"
+  },
+  "homepage": "https://github.com/Zain-Ashfaq/morse-code-translator#readme",
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.4",
+    "babel-jest": "^29.1.2",
+    "jest": "^29.1.2"
+  }
+}
